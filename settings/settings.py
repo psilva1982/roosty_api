@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework_simplejwt",
     "django_filters",
+    "corsheaders",
     "djoser",
     "users",
     "core",
@@ -49,6 +50,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -144,10 +146,12 @@ DJOSER = {
 }
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=15),
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
+    "ACCESS_TOKEN_LIFETIME": timedelta(seconds=15),
+    "REFRESH_TOKEN_LIFETIME": timedelta(minutes=1),
     # 'AUTH_HEADER_TYPES': ('JWT',),
     # 'AUTH_HEADER_NAME': 'HTTP_AUTHORIZATION',
     "USER_ID_FIELD": "id",
     "USER_ID_CLAIM": "user_id",
 }
+
+CORS_ALLOW_ALL_ORIGINS = True
