@@ -6,3 +6,12 @@ Content-Type: application/json
     "email": "john@doe.com",
     "password": "!QAZ2wsx@@"
 }
+
+
+### Refresh token
+POST {{baseURL}}/auth/jwt/refresh/
+Content-Type: application/json
+
+{
+    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczMzIxMDgzNSwiaWF0IjoxNzMzMTI0NDM1LCJqdGkiOiJmOWQ0YTY3MWY5NGM0YmVmYWYwOTAzOGEyNDM0Yzc1MiIsInVzZXJfaWQiOiJlNDlmNGUzNi1mMzRmLTQ3M2EtYjczZS04ZDRmM2MyYTkzNDUifQ.WL7lLASM7m29mTyoBdDyjpYrkmoqihv1RrpclAESSg0"
+}
