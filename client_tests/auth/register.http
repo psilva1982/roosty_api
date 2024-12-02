@@ -1,0 +1,9 @@
+### Register user
+POST {{baseURL}}/auth/users/
+Content-Type: application/json
+
+{
+    "email": "john2@doe.com",
+    "name": "John Doe",
+    "password": "!QAZ2wsx@@"
+}

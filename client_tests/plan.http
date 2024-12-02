@@ -1,0 +1,8 @@
+### List all plans
+GET {{baseURL}}/api/v1/plan/
+Content-Type: application/json
+
+
+### Retrieve plan
+GET {{baseURL}}/api/v1/plan/free/
+Content-Type: application/json

@@ -1,0 +1,8 @@
+### Login user
+POST {{baseURL}}/auth/jwt/create/
+Content-Type: application/json
+
+{
+    "email": "john@doe.com",
+    "password": "!QAZ2wsx@@"
+}

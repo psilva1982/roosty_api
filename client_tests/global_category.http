@@ -1,0 +1,6 @@
+### List all global categories
+GET {{baseURL}}/api/v1/global-category/
+
+
+### Retrieve global category
+GET {{baseURL}}/api/v1/global-category/salao-de-beleza/

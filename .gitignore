@@ -1,0 +1,11 @@
+.venv
+env*
+.idea
+*.pyc
+.pytest_cache
+.coverage
+__pycache__
+node_modules/
+#*.sqlite3
+#.env
+static/

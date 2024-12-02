@@ -1,0 +1,36 @@
+# -- Example FILE: pyproject.toml
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "settings.settings"
+addopts = "--cov"
+testpaths = [
+  'app',
+  'settings'
+]
+
+# -- recommended but optional:
+python_files = ["test_*.py", "*_test.py", "testing/python/*.py"]
+
+[tool.coverage.run]
+omit = [
+  "*apps.py",
+  "*migrations/*",
+  "*settings*",
+  "*tests/*",
+  "*urls.py",
+  "*wsgi/*",
+  "*settings/*",
+  "manage.py"
+]
+
+# ==== black ====
+[tool.black]
+line-length = 120
+target-version = ['py311']
+
+
+# ==== isort ====
+[tool.isort]
+profile = "black"
+line_length = 120
+skip = [".venv/"]
+skip_glob = ["**/migrations/*.py"]

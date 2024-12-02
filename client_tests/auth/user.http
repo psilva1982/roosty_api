@@ -1,0 +1,4 @@
+### User Detail
+GET {{baseURL}}/auth/users/me/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMDg3NDY4LCJpYXQiOjE3MzMwODY1NjgsImp0aSI6IjU1MjZiNTJlZTZjYjRjZDFhNDkyZGU5Yjk3NTU4YzhkIiwidXNlcl9pZCI6ImU0OWY0ZTM2LWYzNGYtNDczYS1iNzNlLThkNGYzYzJhOTM0NSJ9.XeAQ8e5AZMXBavWQgn-jyxg67pnGEzF97kvak4Q3ZHs
+Content-Type: application/json
