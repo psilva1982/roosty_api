@@ -3,7 +3,7 @@ POST {{baseURL}}/auth/jwt/create/
 Content-Type: application/json
 
 {
-    "email": "john@doe.com",
+    "email": "john2@doe.com",
     "password": "!QAZ2wsx@@"
 }
 
